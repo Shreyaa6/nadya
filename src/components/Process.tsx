@@ -66,7 +66,7 @@ export default function Process() {
             Strategic Roadmap
           </span>
           <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-wide leading-tight mb-6">
-            The Advisory Journey
+            The Realtor Journey
           </h2>
           <p className="text-sm md:text-base text-ivory/60 font-light leading-relaxed">
             A precise, risk-mitigated process structured to guide you from initial inquiry to secure asset possession.

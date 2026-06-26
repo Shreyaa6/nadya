@@ -47,7 +47,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-[9px] tracking-[0.3em] uppercase text-neutral-500 font-bold"
             >
-              Private Property Advisory
+              Private Property Realtor
             </motion.div>
 
             {/* Premium Minimalist Progress Bar */}

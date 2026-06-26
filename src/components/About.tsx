@@ -33,7 +33,7 @@ export default function About() {
             >
               <img 
                 src={nadiaImg} 
-                alt="Nadya - Dubai Private Real Estate Advisor" 
+                alt="Nadya - Dubai Private Realtor" 
                 className="w-full h-full object-cover object-top grayscale-[10%] transition-all duration-700 hover:scale-103 hover:grayscale-0"
               />
             </motion.div>
@@ -76,7 +76,7 @@ export default function About() {
                 "My name is Nadya. I am a real estate expert in Dubai."
               </p>
               <p>
-                Unlike traditional brokers, my private advisory is built on data-driven strategy and capital protection. I analyze transaction datasets, real net yields, and future resale liquidity to source high-growth properties across Dubai, guiding you from consultation to keys with absolute transparency.
+                Unlike traditional brokers, my approach as a realtor is built on data-driven strategy and capital protection. I analyze transaction datasets, real net yields, and future resale liquidity to source high-growth properties across Dubai, guiding you from consultation to keys with absolute transparency.
               </p>
             </motion.div>
 

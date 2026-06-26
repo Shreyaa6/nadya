@@ -43,7 +43,7 @@ export default function Navbar({}: NavbarProps) {
             NADYA
           </span>
           <span className="text-[10px] tracking-wider text-neutral-400 uppercase font-semibold border-l border-neutral-200 pl-2">
-            Advisory
+            Realtor
           </span>
         </div>
 

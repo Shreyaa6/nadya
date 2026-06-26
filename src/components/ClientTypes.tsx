@@ -50,7 +50,7 @@ export default function ClientTypes() {
             Who I Guide
           </h2>
           <p className="text-sm md:text-base text-ivory/60 font-light leading-relaxed">
-            I work with a select circle of clients worldwide, adapting my real estate advisory to match their unique lifestyle and financial imperatives.
+            I work with a select circle of clients worldwide, adapting my real estate services to match their unique lifestyle and financial imperatives.
           </p>
         </div>
 

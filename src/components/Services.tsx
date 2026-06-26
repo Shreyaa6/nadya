@@ -10,7 +10,7 @@ export default function Services() {
     },
     {
       icon: TrendingUp,
-      title: 'Investment Property Advisory',
+      title: 'Investment Property Strategy',
       description: 'Identify properties with strong rental liquidity, robust demand, capital appreciation potential, and clear strategic exit options.'
     },
     {
@@ -68,7 +68,7 @@ export default function Services() {
             Core Competencies
           </span>
           <h2 className="text-3xl md:text-5xl font-serif text-ivory tracking-wide leading-tight mb-6">
-            Tailored Advisory Services
+            Tailored Realtor Services
           </h2>
           <p className="text-sm md:text-base text-ivory/60 font-light leading-relaxed">
             Every client's objective is unique. I align my services to deliver rigorous, data-driven solutions for residency, income, and legacy preservation.

@@ -86,10 +86,10 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center space-x-2 cursor-pointer" onClick={() => onNavigate('home')}>
               <span className="text-lg font-bold tracking-tight text-neutral-900">NADYA</span>
-              <span className="text-[10px] tracking-wider text-neutral-400 uppercase font-semibold border-l border-neutral-200 pl-2">Advisory</span>
+              <span className="text-[10px] tracking-wider text-neutral-400 uppercase font-semibold border-l border-neutral-200 pl-2">Realtor</span>
             </div>
             <p className="text-xs text-neutral-500 font-normal max-w-sm leading-relaxed">
-              My discretionary real estate advisory practice caters to global citizens seeking to protect wealth and invest strategically in Dubai's premier residential sectors.
+              My discretionary real estate practice caters to global citizens seeking to protect wealth and invest strategically in Dubai's premier residential sectors.
             </p>
           </div>
 
