@@ -23,7 +23,7 @@ export const propertiesData: Property[] = [
     paymentPlan: '60/40 (40% on completion)',
     liquidity: 'Exceptional (High rental corridor)',
     purpose: 'Investment',
-    image: 'https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
     description: 'Bespoke residences nestled along the marina waterfront, featuring premium finishes, private yacht berths, and floor-to-ceiling windows overlooking the skyline.'
   },
   {

@@ -5,20 +5,12 @@ import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
 import Properties from './components/Properties';
-import Process from './components/Process';
-import WhyDubai from './components/WhyDubai';
-import ClientTypes from './components/ClientTypes';
-import Trust from './components/Trust';
-import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-
-// Luxury Gold Cursor Trail for Desktop
+import ScrollProgress from './components/ScrollProgress';
 
 function App() {
-  const [preferredProperty, setPreferredProperty] = useState<string | undefined>(undefined);
-  const [preferredLocation, setPreferredLocation] = useState<string | undefined>(undefined);
+  const [isPreloaderFinished, setIsPreloaderFinished] = useState(false);
 
   // Smooth Scroll handler
   const handleNavigate = (sectionId: string) => {
@@ -28,61 +20,30 @@ function App() {
     }
   };
 
-  // Callback when a user clicks "Request Details" on a Property Card
-  const handleRequestDetails = (propertyName: string, locationName: string) => {
-    setPreferredProperty(propertyName);
-    setPreferredLocation(locationName);
-    handleNavigate('contact');
-  };
-
-  const handleClearPreference = () => {
-    setPreferredProperty(undefined);
-    setPreferredLocation(undefined);
-  };
-
   return (
-    <div className="min-h-screen bg-luxury-black text-ivory selection:bg-gold-muted/30 selection:text-white relative">
+    <div className="min-h-screen bg-white text-neutral-900 selection:bg-black/10 relative">
+      {/* Scroll Progress Indicator */}
+      <ScrollProgress />
+
       {/* Preloader Intro */}
-      <Preloader />
+      <Preloader onComplete={() => setIsPreloaderFinished(true)} />
 
       {/* Navigation Header */}
-      <Navbar onNavigate={handleNavigate} />
+      <Navbar />
 
       {/* Main Sections */}
       <main>
         {/* 1. Hero Section */}
-        <Hero onNavigate={handleNavigate} />
+        <Hero isPreloaderFinished={isPreloaderFinished} />
 
-        {/* 2. About Nadya Section */}
+        {/* 2. About Nadya Section ("How I work") */}
         <About />
 
-        {/* 3. Services Section */}
-        <Services />
-
-        {/* 4. Featured Properties Section */}
-        <Properties onRequestDetails={handleRequestDetails} />
-
-        {/* 6. Process Section */}
-        <Process />
-
-        {/* 7. Why Dubai Section */}
-        <WhyDubai />
-
-        {/* 8. Client Types ("Who I Help") Section */}
-        <ClientTypes />
-
-        {/* 9. Trust Pillars & Testimonials Section */}
-        <Trust />
-
-        {/* 10. Lead Capture Section */}
-        <ContactForm 
-          preferredProperty={preferredProperty}
-          preferredLocation={preferredLocation}
-          onClearPreference={handleClearPreference}
-        />
+        {/* 3. Featured Properties & Yield List */}
+        <Properties />
       </main>
 
-      {/* 11 & 12. Final CTA Section & Footer */}
+      {/* 6. Footer */}
       <Footer onNavigate={handleNavigate} />
     </div>
   );
